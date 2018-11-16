@@ -1,4 +1,4 @@
-/*package com.niit.producttest;
+package com.niit.producttest;
 
 import static org.junit.Assert.*;
 
@@ -21,19 +21,21 @@ public class ProductDaoImplTest extends TestCase{
 	ApplicationContext ac=new AnnotationConfigApplicationContext(H2Configuration.class,ProductDaoImpl.class);
 	ProductDao productDao=(ProductDao)ac.getBean("productDaoImpl");
 
+/*	
 	@Test
 	public void testAddProducts() {
 		Product p=new Product();
-		p.setProductname("BIKE");
-		p.setProductdesc("ROYAL ENFIELD");
+		p.setProductname("CAR");
+		p.setProductdesc("LAMBHORGHINI");
 		p.setQuantity(5);
-		p.setPrice(750000);
+		p.setPrice(850000);
 		//p.setId(5);
 		productDao.addProducts(p);
 		assertTrue(p.getId()>0);
 	}
-
-	@Ignore
+*/
+	
+	/*@Ignore
 	@Test
 	public void testUpdateProducts() {
 		Product p= productDao.selectProducts(1);
@@ -42,14 +44,17 @@ public class ProductDaoImplTest extends TestCase{
 		p=productDao.selectProducts(1);
 		assertTrue(p.getPrice() == 2500000);
 	}
-	@Ignore
+
+	
+
+
 	@Test
 	public void testDeleteProducts() {
-		productDao.deleteProducts(2);
-		Product p=productDao.selectProducts(2);
+		productDao.deleteProducts(33);
+		Product p=productDao.selectProducts(33);
 		assertNull(p);
 	}
-	@Ignore
+
 	@Test
 	public void testSelectProducts() {
 		Product actualproduct1=productDao.selectProducts(1);
@@ -64,6 +69,5 @@ public class ProductDaoImplTest extends TestCase{
 		assertFalse(p.isEmpty());
 		assertTrue(p.size()==1);
 	}
-
-}
 */
+}
